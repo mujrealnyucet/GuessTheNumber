@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Guess The Number</title>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+        <div class="main-menu">
+            <form action="#" method="post" id="start-form">
+                <label for="upper-limit" class="upper-limit-text">Maximální číslo:</label>
+                <input type="text" name="upper-limit" id="upper-limit" placeholder="10" pattern="\d*" title="To není číslo!">
+                <button type="submit" class="start-game-button">Začít hru</button>
+            </form>
+            <h3>Historie her</h3>
+            <div class="history"></div>
+        </div>
+        <div class="game hidden">
+            <h1>Guess The Number</h1>
+            <form action="#" method="post" id="game-form">
+                <input type="text" name="number-input" id="number-input" pattern="\d*" title="To není číslo!" placeholder="Hádej číslo..." required>
+                <label for="number-input"></label>
+                <button type="submit" class="number-submit-btn">Správně?</button>
+            </form>
+            <p class="extra-hint-message"></p>
+            <p class="hint-message"></p>
+            <div>
+                <button class="button-return">Zpět na výsledky</button>
+                <button class="correct hidden button-restart">Zkusit znovu</button>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <p>Vytvořil Vojtěch Tržil — Projekt 'Guess The Number'</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+<script src="main.js"></script>

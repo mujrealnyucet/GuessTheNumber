@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: #eff1f5;
+    color: #1b1c22;
+}
+
+.container {
+    max-width: 600px;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* https://welearncode.com/rainbow-text/ */
+h1 {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(to right, #d20f39, #ea76cb, #8839ef, #1e66f5, #04a5e5, #40a02b, #df8e1d, #fe640b, #e64553);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 15px;
+}
+
+
+
+.main-menu,
+.game {
+    background-color: #e6e9ef;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+footer {
+    background-color: #e6e9ef;
+    border-radius: 15px;
+    padding: 5px 0;
+    margin-top: 30px;
+    & > p {
+        font-size: 14px;
+    }
+}
+
+input {
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    outline: 1px;
+    &:user-invalid {
+        outline: 2px solid #d20f39;
+    }
+    &:focus {
+        outline: 2px solid #7287fd;
+    }
+    &::placeholder {
+        font-family: "Google Sans", sans-serif;
+    }
+}
+
+button {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #baebb6;
+    color: #000000;
+    border: none;
+    outline: 1px solid #6c6f85;
+
+    &:hover {
+        background-color: #a3dfe2;
+        outline: 2px solid #6c6f85;
+        transition: background-color 600ms;
+    }
+    &:disabled {
+        background-color: #9ca0b0;
+    }
+}
+
+.start-game-button {
+    font-size: 14px;
+}
+
+.button-return {
+    background-color: #ffcdb0;
+    padding: 10px;
+    &:hover {
+        background-color: #ffacb3;
+    }
+}
+
+.button-restart {
+    background-color: #ffc5f0;
+    padding: 10px;
+    font-weight: 600;
+    &:hover {
+        background-color: #d8baff;
+    }
+}
+
+.upper-limit-text {
+    font-weight: 500;
+
+}
+
+#start-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#game-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.smaller {
+    font-size: 13px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+
+    & .took-attemtps {
+        font-weight: 500;
+    }
+}
+
+.history-item {
+    background-color: #ccd0da;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
