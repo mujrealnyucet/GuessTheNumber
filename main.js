@@ -1,4 +1,4 @@
-// Promenne
+// Promenne :)
 let currentSecret = 0;
 let currentAttempts = 0;
 let chosenDifficulty = 10;
