@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
-
 body {
     font-family: "Google Sans", sans-serif;
     background-color: #eff1f5;
@@ -25,8 +24,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     padding-bottom: 15px;
 }
-
-
 
 .main-menu,
 .game {
